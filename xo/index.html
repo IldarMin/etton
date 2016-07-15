@@ -15,14 +15,15 @@
     </div> -->
 
     <!-- выбор сторон:)  не стал использовать форму form, так как она будет перезагружать страницу-->
-
+    <div id="moveAl" class="moveAl">
+    </div>
     <div id="second_etap" class="second_etap">
       <div class="black_color"></div>
-      <div class="popap">
+      <div class="popup">
         <div class="" style="margin-top: 80px;">
-          <input class="toggle" type="radio" name="role" id="computer" value="computer"checked>
+          <input class="toggle" type="radio" name="role" id="computer" value="computer">
           <label for="computer">Против JS</label>
-          <input class="toggle" type="radio" name="role" id="player" value="player">
+          <input class="toggle" type="radio" name="role" id="player" value="player" checked>
           <label for="player">Против друга</label>
         </div>
         <div class="" style="margin-top: 80px;">
@@ -40,6 +41,16 @@
       <table id="myTable" align="center">
 
       </table>
+    </div>
+
+    <!-- конец   игры -->
+
+    <div id="last_etap" class="last_etap display_none">
+      <div class="black_color"></div>
+      <div class="last_popup">
+          <div id='p1'>мгм</div>
+        <input type="submit" name="name" value="Начать заново!!!" onclick="tictoc.startAgain()">
+      </div>
     </div>
 
   </body>

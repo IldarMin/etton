@@ -1,7 +1,7 @@
 window.tictoc = {
     findSame: function(click, timeClick) {
       var classes = click.split(/\s+/),
-          count = +document.getElementById('count').value;
+          count = this.bigNumber(+document.getElementById('count').value);
 
       for (var i = 0; i < classes.length; i++) {
             // классы на кликнутый элемент
@@ -75,10 +75,9 @@ window.tictoc = {
       return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
     },
     bigNumber:function(count){
-      // if (count > 40) {
-      //   return 39;
-      // }
-      // return count;
+      if (count < 1) {
+          return 3;
+      }
       return (count > 40) ? 39 : count;
     },
     createTable:function(table, count){
