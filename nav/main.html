@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Nav</title>
+  </head>
+  <style media="screen">
+      .main{
+            margin-top: 200px;
+            margin-left: 198px;
+            overflow: hidden;
+            height: 300px;
+            width: 300px;
+            position: relative;
+            border: solid 1px #efefef;
+            border-radius: 169px;
+      }
+      .main li{
+        margin-left:-91px;
+        margin-top:-19px;
+        width: 200px;
+        height: 150px;
+        border: solid 1px #efefef;
+        position: absolute;
+        list-style: none;
+        background-color: #418194;
+      }
+      ul li:first-child{
+          transform: rotate(0deg) skew(30deg);
+          transform-origin: 100% 100%;
+      }
+      ul li:nth-child(2){
+          transform: rotate(60deg) skew(30deg);
+          transform-origin: 100% 100%;
+      }
+      ul li:nth-child(3){
+          transform: rotate(120deg) skew(30deg);
+          transform-origin: 100% 100%;
+      }
+      ul li:nth-child(4){
+          transform: rotate(180deg) skew(30deg);
+          transform-origin: 100% 100%;
+      }
+      ul li:nth-child(5){
+          transform: rotate(240deg) skew(30deg);
+          transform-origin: 100% 100%;
+      }
+      ul li:nth-child(6){
+          transform: rotate(300deg) skew(30deg);
+          transform-origin: 100% 100%;
+      }
+      ul li div{
+        position: absolute;
+        right: 53px;
+        bottom: 30px;
+        transform: skew(-30deg) rotate(-75deg);
+        display: none;
+      }
+      .main_button{
+          position: absolute;
+            height: 130px;
+            width: 130px;
+            background-color: #efefef;
+            margin-left: 86px;
+            margin-top: 71px;
+            border-radius: 100px;
+            z-index: 10;
+            cursor: pointer;
+      }
+  </style>
+
+  <body>
+      <div class="main">
+          <ul>
+              <li><div>Home</div></li>
+              <li><div>Home</div></li>
+              <li><div>Home</div></li>
+              <li><div>Home</div></li>
+              <li><div>Home</div></li>
+              <li><div>Home</div></li>
+          </ul>
+          <div id="main_button" class="main_button">
+
+          </div>
+      </div>
+  </body>
+</html>
